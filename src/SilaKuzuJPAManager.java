@@ -10,7 +10,6 @@ import javax.persistence.Persistence;
 
 public class SilaKuzuJPAManager {
 	
-
 	public static ArrayList<Country> readFromFile ( String filename ) 
 	{
 		ArrayList<Country> countries = new ArrayList<Country>();
@@ -24,10 +23,7 @@ public class SilaKuzuJPAManager {
 			{
 				String line = bfr.readLine();
 				if (line == null)
-				{
 					break;
-				}
-				//System.out.println(line);
 				String[] arr = line.split(",");
 				int tableId = id;
 				String name= arr[0];
@@ -41,7 +37,6 @@ public class SilaKuzuJPAManager {
 				id++;
 			}
 			reader.close();
-		
 		}
 		catch (FileNotFoundException e) {
 			System.out.println("no file");
@@ -70,14 +65,11 @@ public class SilaKuzuJPAManager {
 			}
 			
 			entityManager.getTransaction().commit();
-			
 			System.out.println("Data inserted!!!");
 		}
 		catch (Exception e) {
 			e.printStackTrace();
 		}
-		
-		
 	}
 	
 	
@@ -150,5 +142,4 @@ public class SilaKuzuJPAManager {
 			e.printStackTrace();
 		}
 	}
-	
 }
