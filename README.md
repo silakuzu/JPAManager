@@ -1,2 +1,2 @@
 # JPA Project
-Mobile Application Development Course at Sabancı University
+Mobile Application Development course project at Sabancı University
