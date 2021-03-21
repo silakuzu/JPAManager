@@ -1,1 +1,1 @@
-# JPAProject
+# JPA Project
